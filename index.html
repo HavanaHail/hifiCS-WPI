@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title> CS @ WPI</title>
+</head>
 <style>
 ul {
   list-style-type: none;
@@ -31,10 +33,38 @@ li a:hover {
 
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="design.html">News</a></li>
-  <li><a href="systems.html">Contact</a></li>
-  <li><a href="theory.html">About</a></li>
+  <li><a href="design.html">Design</a></li>
+  <li><a href="systems.html">Systems</a></li>
+  <li><a href="theory.html">Theory</li>
 </ul>
 
+<form action="/action_page.php">
+    <label for="Name of Submitter">Name of Submitter:</label><br>
+    <input type="text" id="name" name="name" value="Joe Doe"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value="Jdoe@wpi.edu"><br><br>
+     <input type="radio" id="Anon" name="Anon" value="HTML">
+     <label for="anonymous yes">Anonymous?</label><br>
+    <br>
+    <label for="ftitle">Form Title:</label><br>
+    <input type="text" id="form title" name="fname" value="Form Title"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+    <label for="Resource">Resource:</label><br>
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br><br>
+
+
+
+      <input type="radio" id="Design" name="fav_language" value="HTML">
+      <label for="theory">Design</label><br>
+      <input type="radio" id="Systems" name="fav_language" value="CSS">
+      <label for="theory">Systems</label><br>
+      <input type="radio" id="Theory" name="fav_language" value="JavaScript">
+      <label for="theory">Theory</label><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    
 </body>
 </html>
