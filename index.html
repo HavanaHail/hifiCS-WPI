@@ -2,6 +2,8 @@
 <html>
   <head>
     <title> CS @ WPI</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
 </head>
 <style>
 ul {
@@ -28,17 +30,32 @@ li a:hover {
   background-color: #111;
 }
 </style>
-</head>
-<body>
+
+
 
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="design.html">Design</a></li>
   <li><a href="systems.html">Systems</a></li>
-  <li><a href="theory.html">Theory</li>
+  <li><a href="theory.html">Theory</a></li>
 </ul>
+<h1> CS @ WPI </h1>
 
-<form action="/action_page.php">
+<div class="wrapper">
+
+
+<div class = "about">
+  <p> CS @ WPI is a collection of resources for Computer Science students at WPI to help them succeed in their studies and classes.<br>
+This data was gathered from students enrolled in a variety of <br> advanced computer science courses and categorized into three different buckets: Design, Systems and Theory. <br> 
+  Following the WPI Computer Science Course Flow
+ Take a look around and see what there is to do! 
+ Assuming that we are missing something, go ahead and propose your own resource to the right.</p>
+ <img src="csimg.png" alt="Girl in a jacket" width="500">
+</div>
+
+
+<form name="myForm" class = "form" onsubmit="return validateForm()">
+    <div class = "formContents">
     <label for="Name of Submitter">Name of Submitter:</label><br>
     <input type="text" id="name" name="name" value="Joe Doe"><br><br>
     <label for="email">Email:</label><br>
@@ -48,12 +65,11 @@ li a:hover {
     <br>
     <label for="ftitle">Form Title:</label><br>
     <input type="text" id="form title" name="fname" value="Form Title"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <br><br>
 
     <label for="Resource">Resource:</label><br>
     <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-    <br><br>
+    <br>
 
 
 
@@ -64,7 +80,50 @@ li a:hover {
       <input type="radio" id="Theory" name="fav_language" value="JavaScript">
       <label for="theory">Theory</label><br><br>
       <input type="submit" value="Submit">
-    </form> 
+    </div>
     
+    </form> 
+
+
+  </div>
+
+
+
+
+  <script>
+  function validateForm() {
+    //name value
+  var a = document.forms["myForm"]["name"].value;
+  var b = document.forms["myForm"]["email"].value;
+  var c = document.forms["myForm"]["fname"].value;
+  var d = document.forms["myForm"]["message"].value;
+  var e = document.forms["myForm"]["fav_language"].value;
+
+  if (a == "" || a == null) {
+    alert("Name must be filled out");
+    return false;
+     }
+     if (b == "" || b == null) {
+    alert("Email must be filled out");
+    return false;
+     }
+     if (c == "" || c == null) {
+    alert("Title must be filled out");
+    return false;
+     }
+     if (d == "" || d == null) {
+    alert("Description must be filled out");
+    return false;
+     }
+     if (e == "" || e == null) {
+    alert("Tag must be filled out");
+    return false;
+     }
+     else{
+      alert("Submission was succesful. Thank you");
+     }
+  }
+
+</script>
 </body>
 </html>

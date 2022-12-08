@@ -1,0 +1,37 @@
+h1{
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+.wrapper {
+  padding-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    background-color: lightgray;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    background-color: lightgray;
+  }
+  p{
+    text-align: center;
+    font-family: Verdana, Geneva sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px;
+
+  }
